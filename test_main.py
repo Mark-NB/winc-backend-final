@@ -25,4 +25,3 @@ def test_about(client):
     response = client.get("/contact")
     assert response.status_code == 200
     assert b"<title>Contact</title>" in response.data
-
