@@ -32,6 +32,7 @@ nav {
 
 #nav-list a {
     margin: 5px;
+    padding: 3px;
     border: 1px solid #E5E4E2;
     border-radius: 2px;
     color: #E5E4E2;
@@ -50,6 +51,10 @@ main {
 }
 
 #contact-list a {
+    margin: 5px;
+    padding: 3px;
+    border: 1px solid #E5E4E2;
+    border-radius: 2px;
     color: #E5E4E2;
     text-decoration: none;
 }
