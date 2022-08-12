@@ -35,3 +35,4 @@ jobs:
             cd /home/winc-cd/
             git pull
             git status
+            systemctl restart winc-cd
