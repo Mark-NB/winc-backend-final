@@ -3,6 +3,7 @@ name: Run tests and deploy if succesfull
 on: push
 jobs:
   
+  # setup python and dependencies to run tests using pytest.
   run-tests:
     runs-on: ubuntu-20.04
     steps:
@@ -17,6 +18,8 @@ jobs:
       - name: Run tests
         run: pytest
   
+  # if all tests are succesfull, connect to VPS, run script on server to initiate ssh agent, add ssh key used
+  # for github acces, pull from git, and restart application.
   deploy:
     needs: run-tests
     runs-on: ubuntu-20.04
