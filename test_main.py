@@ -28,7 +28,7 @@ def test_about(client):
 
 
 # Guaranteed fail test to test github action to stop before deployment
-def test_about(client):
-    response = client.get("/contact")
-    assert response.status_code == 200
-    assert b"<title>THIS SHOULD READ CONTENT BUT IT DOESNT</title>" in response.data
+# def test_about(client):
+#     response = client.get("/contact")
+#     assert response.status_code == 200
+#     assert b"<title>THIS SHOULD READ CONTENT BUT IT DOESNT</title>" in response.data
