@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html", pagename="WINC backend CL Assignment")
+    return render_template("index.html", pagename="WINC Continous Deployment Assignment")
 
 
 @app.route("/home")

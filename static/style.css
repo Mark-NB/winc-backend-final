@@ -10,24 +10,30 @@ h1 {
     color: #E5E4E2;
 }
 
+h2 {
+    color: #E5E4E2;
+}
+
+p {
+    color: #E5E4E2;
+}
+
 nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-end;
 }
 
 #nav-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-end;
 }
 
-#nav-list li {
+#nav-list a {
+    margin: 5px;
     border: 1px solid #E5E4E2;
     border-radius: 2px;
-}
-
-#nav-list a {
     color: #E5E4E2;
     text-decoration: none;
 }
@@ -41,4 +47,9 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+#contact-list a {
+    color: #E5E4E2;
+    text-decoration: none;
 }

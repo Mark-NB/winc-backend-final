@@ -18,7 +18,7 @@ def test_redirect(client):
 def test_index(client):
     response = client.get("/")
     assert response.status_code == 200
-    assert b"<title>WINC backend CL Assignment</title>" in response.data
+    assert b"<title>WINC Continous Deployment Assignment</title>" in response.data
 
 
 def test_about(client):
