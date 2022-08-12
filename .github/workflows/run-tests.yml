@@ -24,12 +24,14 @@ jobs:
       - name: Deploy to server
         uses: appleboy/ssh-action@master
         with:
-          host: 188.166.40.219
-          username: root
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SERVER_SECRET }}
-          port: 22
+          port: ${{ secrets.SERVER_PORT }}
           script_stop: true
           script: |
+            eval "$(ssh-agent -s)"
+            ssh-add ~/.ssh/SERVER-GITHUB-PULL
             cd /home/winc-cd/
             git pull
             git status
