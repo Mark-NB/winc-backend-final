@@ -10,7 +10,7 @@ def index():
 
 @app.route("/home")
 def home():
-    return redirect("http://localhost/")
+    return redirect("http://188.166.40.219/")
 
 
 @app.route("/contact")
